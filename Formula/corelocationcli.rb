@@ -6,13 +6,12 @@ class Corelocationcli < Formula
   # revision 1
 
   # bottle do
-  #   root_url "https://github.com/mschirrmeister/corelocationcli/releases/download/4.0.1"
-  #   cellar :any
-  #   sha256 "xxx" => :big_sur
-  #   # rebuild 1
+  #   root_url "https://github.com/mschirrmeister/corelocationcli/releases/download/4.0.1/"
+  #   rebuild 1
+  #   sha256 cellar: :any_skip_relocation, all: "cc00a61e244d3ddec28300a29620d21a88a57e59b00585779d3e926e7896452e"
   # end
 
-  depends_on macos: :big_sur
+  depends_on :macos => :big_sur
 
   def install
     bin.install "CorelocationCLI"
