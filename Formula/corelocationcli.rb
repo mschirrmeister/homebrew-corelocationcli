@@ -12,7 +12,7 @@ class Corelocationcli < Formula
   #   # rebuild 1
   # end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :big_sur
 
   def install
     bin.install "CorelocationCLI"
